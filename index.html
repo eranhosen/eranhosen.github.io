@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eran — Genetic Engineering &amp; Bioinformatics</title>
+<meta name="description" content="Personal site of Eran — final-year Genetic Engineering &amp; Biotechnology student, computational biology researcher, founder of BioPC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav-mark">E.</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">about</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#writing">writing</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">genetic engineering &amp; computational biology</p>
+        <h1>Eran</h1>
+        <p class="hero-role">Final-year B.Sc. student, Genetic Engineering &amp; Biotechnology<br>East West University, Dhaka</p>
+        <p class="hero-desc">
+          I work at the intersection of wet-lab biology and computation — mining genomes for
+          therapeutic candidates, modelling protein structure, and building the tools and
+          training infrastructure I wish existed when I started.
+        </p>
+        <div class="hero-links">
+          <a href="#research" class="btn-primary">See my research</a>
+          <a href="#contact" class="btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Portrait of Eran" id="profileImg">
+        <p class="photo-caption">Dhaka, Bangladesh</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="section-body prose">
+      <p>
+        I'm a final-year student in Genetic Engineering and Biotechnology, working mostly at
+        the computational end of biology — genome mining, structural modelling, and molecular
+        docking — but grounded in wet-lab fundamentals. My research so far has focused on
+        finding antibacterial candidates from unconventional sources and building fully
+        in-silico pipelines that a resource-limited lab can actually run.
+      </p>
+      <p>
+        Outside my own research, I founded <strong>BioPC — A Bioinformatics Lab of Research and
+        Training</strong>, built around a conviction I keep coming back to: the biggest barrier
+        to computational biology in Bangladesh isn't talent, it's access — to training,
+        mentorship, and tools. I'm trying to close that gap.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>Education &amp; Training</h2>
+    </div>
+    <div class="section-body">
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">2022 — present</div>
+          <div class="timeline-content">
+            <h3>B.Sc. in Genetic Engineering &amp; Biotechnology</h3>
+            <p>East West University, Dhaka, Bangladesh — final-year student.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">—</div>
+          <div class="timeline-content">
+            <h3>Computational training</h3>
+            <p>Self-directed and course-based training in molecular docking (AutoDock Vina),
+              protein structure prediction (AlphaFold2), sequence analysis, and phylogenetics.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>Research</h2>
+    </div>
+    <div class="section-body">
+
+      <article class="research-item">
+        <div class="research-meta">
+          <span class="tag tag-active">ongoing — thesis</span>
+          <span class="mono">FLA / ESKAPE</span>
+        </div>
+        <h3>Mining Bacteriolytic Genes from Free-Living Amoeba (FLA) Genomes: A Computational Framework for Targeting ESKAPE Pathogens</h3>
+        <p>
+          An entirely in-silico pipeline that mines free-living amoeba genomes for
+          bacteriolytic genes with activity against ESKAPE pathogens — the group of bacteria
+          responsible for most drug-resistant hospital infections. The pipeline combines
+          literature curation, genome mining, gene library construction, and structural
+          docking (AlphaFold2 + AutoDock Vina), with a built-in exclusion filter for proteins
+          shown to enhance rather than inhibit bacterial virulence.
+        </p>
+        <ul class="research-tags">
+          <li>genome mining</li>
+          <li>molecular docking</li>
+          <li>AlphaFold2</li>
+          <li>AutoDock Vina</li>
+          <li>antibacterial discovery</li>
+        </ul>
+      </article>
+
+      <article class="research-item">
+        <div class="research-meta">
+          <span class="tag tag-active">ongoing — venture</span>
+          <span class="mono">BioPC</span>
+        </div>
+        <h3>BioPC — A Bioinformatics Lab of Research and Training</h3>
+        <p>
+          A bioinformatics research and training initiative addressing the shortage of
+          accessible computational biology training in Bangladesh. Currently building out its
+          training programs and public web presence.
+        </p>
+        <ul class="research-tags">
+          <li>bioinformatics education</li>
+          <li>research training</li>
+          <li>South Asia</li>
+        </ul>
+      </article>
+
+      <article class="research-item">
+        <div class="research-meta">
+          <span class="tag tag-prior">prior work</span>
+          <span class="mono">H. pylori</span>
+        </div>
+        <h3>Structural &amp; functional characterisation of an H. pylori hypothetical protein</h3>
+        <p>
+          Molecular docking, multiple sequence alignment, and phylogenetic analysis of a
+          hypothetical protein — foundational work that shaped the computational approach used
+          in the FLA/ESKAPE project.
+        </p>
+        <ul class="research-tags">
+          <li>MSA</li>
+          <li>phylogenetics</li>
+          <li>docking</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="section-body">
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Computational</h3>
+          <ul>
+            <li>Molecular docking (AutoDock Vina)</li>
+            <li>Protein structure prediction (AlphaFold2)</li>
+            <li>Sequence alignment &amp; phylogenetics</li>
+            <li>Genome mining &amp; literature curation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Wet-lab</h3>
+          <ul>
+            <li>Genetic engineering fundamentals</li>
+            <li>Molecular biology techniques</li>
+            <li><span class="fill">— add your specific lab techniques —</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; scientific writing</h3>
+          <ul>
+            <li>Scientific literature review</li>
+            <li>Research proposal &amp; report writing</li>
+            <li><span class="fill">— add software / languages you use —</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="section-index">05</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="section-body">
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">— present</div>
+          <div class="timeline-content">
+            <h3>Founder, BioPC</h3>
+            <p>Building a bioinformatics research and training lab focused on the South Asian
+              training gap in computational biology.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-content fill-block">
+            <p class="fill">— add internships, lab positions, competitions, or leadership roles here —</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WRITING / PUBLICATIONS -->
+  <section class="section" id="writing">
+    <div class="section-head">
+      <span class="section-index">06</span>
+      <h2>Writing</h2>
+    </div>
+    <div class="section-body">
+      <article class="research-item">
+        <div class="research-meta">
+          <span class="tag tag-progress">in progress</span>
+          <span class="mono">review paper</span>
+        </div>
+        <h3>Review paper — Hantavirus</h3>
+        <p>
+          Working toward a review paper as a final-year requirement, with a focus on genomic
+          surveillance and structural vaccinology approaches to Hantavirus, motivated in part
+          by the recent Andes virus outbreak.
+        </p>
+      </article>
+      <p class="fill" style="margin-top:1.5rem;">— this section will grow as publications are finalised —</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="section-head">
+      <span class="section-index">07</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="section-body">
+      <p class="prose">
+        Open to research collaboration, training partnerships, and conversations about
+        computational biology in resource-limited settings.
+      </p>
+      <ul class="contact-list">
+        <li><span class="contact-label">email</span> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li><span class="contact-label">linkedin</span> <a href="#" class="fill">add your LinkedIn URL</a></li>
+        <li><span class="contact-label">github</span> <a href="#" class="fill">add your GitHub URL</a></li>
+        <li><span class="contact-label">google scholar</span> <a href="#" class="fill">add once available</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Eran. Built with plain HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
